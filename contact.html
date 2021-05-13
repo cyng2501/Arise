@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+        <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- Jquary ui -->
+        <script
+        src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"
+        integrity="sha256-PsB+5ZEsBlDx9Fi/GXc1bZmC7wEQzZK4bM/VwNm1L6c="
+        crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/contactstyle.css">
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="scroller" class="header">
+            <div class="header_logo">
+                <img id="headerlogo" class="headlogo" src="images/logo4.png">
+            </div>
+            <span class="navbar-toggle" id="js-navbar-toggle" onclick="headerTransform()">
+                <img class="hamicon" src="images/menu1.png">
+            </span>
+            <div class="menu" id="js-menu">
+                <a class="menu_items" href="#">Home</a>
+                <a class="menu_items" href="#">Services</a>
+                <a class="menu_items" href="#">Case Studies</a>
+                <a class="menu_items" href="#">Blog</a>
+                <a class="menu_items" href="#">About</a>
+                <a class="menu_items activelink" href="#">Contact</a>
+                
+            </div>
+        </div>
+        <div class="contact">
+            <div class="heading">
+                <h1 class="heading_title">Get in Touch</h1>
+                <span class="heading_content">If you have any specific questions, or just want to know more about what we do, we’d love to hear from you</span>
+            </div>
+            <div class="contact-row">
+                <div class="contact-div">
+                    <div class="contact-info">
+                        <h4 class="contactinfohead" style="margin-top:0;">CALL US ON</h4>
+                        <a class="contactinfo" href="#">+44 (0)114 430 0145</a>
+                        <h4 class="contactinfohead">OR EMAIL</h4>
+                        <a class="contactinfo" href="#">hello@wearearise.com</a>
+                    </div>
+                </div>
+                <div class="contact-div">
+                    <img class="contactmap" src="images/mapimg.jpg"/>
+                </div>
+                <div class="contact-div">
+                    <img class="contactimg" src="images/contactimg.jpg"/>
+                </div>
+                <div class="contact-div">
+                    <div class="contact-add">
+                        <div class="contactlogo">
+                            <img class="contactlogoimg" src="images/contactlogo.svg">
+                        </div>
+                        <div class="cont-addr">
+                            <p class="contactinfo">Brincliffe House </p>
+                            <p class="contactinfo">59 Wostenholm Road</p>
+                            <p class="contactinfo">Sheffield</p>
+                            <p class="contactinfo">S7 1LE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-contact">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-form">
+                        <strong class="formhead">MESSAGE US</strong>
+                        <input class="textbox1" type="text" placeholder="Your name" name="Name">
+                        </br>
+                        <input class="textbox1" type="text" placeholder="Your email" name="Email">
+                        </br>
+                        <textarea class="textbox1 textarea1" placeholder="Your enquiry" name="Enquiry"></textarea> 
+                            </br>
+                        <button class="form-submit">SEND</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-detail">
+                        <div class="detail">
+                            <strong class="detailhead">CALL US ON</strong>
+                            <a href=# class="detailcontent">+44 (0)114 430 0145</a>
+                        </div>
+                        <div class="detail">
+                            <strong class="detailhead">OR EMAIL</strong>
+                            <a href=# class="detailcontent">hello@wearearise.com</a>
+                        </div>
+                        <div class="detail">
+                            <strong class="detailhead">SOCIAL US</strong>
+                            <div class="detailsocial">
+                                <div class="Social" >
+                                    <a class="sociallink" href="https://twitter.com/weareariseuk">
+                                        <img class="sociallogo" id="t" src="images/socialtwhite.png">
+                                        <img class="sociallogohover" id="thover" src="images/socialtred.png">
+                                    </a>
+                                </div>
+                                <div class="Social" >
+                                    <a class="sociallink" href="https://facebook.com/weareariseuk">
+                                        <img class="sociallogo" id="f" src="images/socialfwhite.png">
+                                        <img class="sociallogohover" id="fhover" src="images/socialfred.png">
+                                    </a>
+                                </div>
+                                <div class="Social" >
+                                    <a class="sociallink" href="https://www.linkedin.com/company/arise-we-are-arise-ltd-">
+                                        <img class="sociallogo" id="lin" src="images/socialinwhite.png">
+                                        <img class="sociallogohover" id="linhover" src="images/socialinred.png">
+                                    </a>
+                                </div>
+                                <div class="Social" >
+                                    <a class="sociallink" href="http://m.me/weareariseuk">
+                                        <img class="sociallogo" id="m" src="images/socialmwhite.png">
+                                        <img class="sociallogohover" id="mhover" src="images/socialmred.png">
+                                    </a>
+                                </div>
+                                <div class="Social" >
+                                    <a class="sociallink" href="https://www.instagram.com/wearearise/">
+                                        <img class="sociallogo" id="insta" src="images/socialinstawhite.png">
+                                        <img class="sociallogohover" id="instahover" src="images/socialinstared.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br clear="all" />
+                </div>
+                <br clear="all" />
+                <div class="footer-crediits">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 credits-left">
+                        <strong class="creditshead">© 2020 We Are Arise LTD</strong>
+                        <span class="creditscontent">Registered company 09209859</span>
+                        <span class="creditscontent">VAT #GB 245 7439 84</span>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 credits-right">
+                        <strong class="creditshead creditsheadright">Arise, Brincliffe House,<br>59 Wostenholm Rd, Sheffield, S7 1LE, UK</strong>
+                        <br/>
+                        <a class="creditslink" href="#">Credits</a>
+                        <a class="creditslink" href="#">Privacy Policy</a>
+                        <a class="creditslink" href="#">Web Design Sheffield</a>
+                    </div>
+                    <br clear="all" />
+                </div>
+            </div>
+            <br clear="all" />
+        </footer>
+        <script>
+            function headerTransform(){
+                var $mainNav = $('#js-menu');
+                var $height = window.innerHeight-80;
+                var $navBarToggle = $('#js-navbar-toggle');
+                $mainNav.toggleClass('active');
+                $mainNav.css({
+                    height:$height+'px',
+                })
+                $($navBarToggle).toggleClass('rotateon');
+            }
+            // let mainNav = document.getElementById('js-menu');
+            // let navBarToggle = document.getElementById('js-navbar-toggle');
+
+            // navBarToggle.addEventListener('click', function () {
+            // mainNav.classList.toggle('active');
+            // navBarToggle.classlist.toggle('rotateon');
+            // });
+        </script>        
+    </body>
+</html>

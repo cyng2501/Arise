@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hospitality, Tourism & Business Marketing Agency · Arise</title>
+
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="css/projectstyle.css">
+  <script src="javascript/projectscript.js"></script>
+
+  <!-- Jquary ui -->
+  <script
+  src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"
+  integrity="sha256-PsB+5ZEsBlDx9Fi/GXc1bZmC7wEQzZK4bM/VwNm1L6c="
+  crossorigin="anonymous"></script>
+  
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="starting">
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" style="margin-top:-50px">
+      <!-- Indicators
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol> -->
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner imgcar" role="listbox">
+        <div class="item active">
+          <img class="reframe"  src="images/carousalimg1.jpg" alt="Chania">
+        </div>
+    
+        <div class="item">
+          <img class="reframe" style="width:auto;height: 95vh;" src="images/carousalimg2.jpg" alt="Chania">
+        </div>
+    
+        <div class="item">
+          <img class="reframe" style="width:auto;height: 95vh;" src="images/carousalimg3.jpg" alt="Flower">
+        </div>
+        <div class="item">
+          <img class="reframe" src="images/carousalimg4.jpg" alt="Flower">
+        </div>
+        <div class="item">
+          <img class="reframe" style="width:auto;height: 95vh;" src="images/carousalimg5.jpg" alt="Flower">
+        </div>
+      </div>
+      <div class="img-overlay">
+        <img class="logo1 img-responsive center-block" src="images/logo3.png">
+        <h1 class="tagline">The full power of digital marketing for your business</h1>
+        <h2 class="sub-tagline">We help clients in hospitality, tourism and business build their online presence;
+          <a href="#">Social Media</a>,
+          <a href="#">Web-design</a> and
+          <a href="#">Search Engine Marketing</a> </h2>
+        <a href="#"><img class="down-gold center-block" onclick="" src="images/down-gold.svg"></a>
+      </div>
+    </div>
+  </div>
+  <div id="scroller-anchor"></div> 
+  <div id="scroller" class="header">
+    <div class="header_logo">
+      <img id="headerlogo" class="headlogo" src="images/logo4.png">
+    </div>
+    <span class="navbar-toggle" id="js-navbar-toggle" onclick="headerTransform()">
+      <img class="hamicon" src="images/menu1.png">
+    </span>
+    <div class="menu" id="js-menu">
+      <a class="menu_items" href="#">Home</a>
+      <a class="menu_items" href="#">Services</a>
+      <a class="menu_items" href="#">Case Studies</a>
+      <a class="menu_items" href="#">Blog</a>
+      <a class="menu_items" href="#">About</a>
+      <a class="menu_items activelink" href="#">Contact</a>   
+    </div>
+  </div>
+  <div class="works" >
+    <h2 class="workhead">Find out how we've maximised the digital marketing impact for clients</h3>
+    <div class="row">
+      <div class="work col-lg-4 col-sm-6 col-xs-12" onmouseenter="infodisplay('info1')" onmouseleave="infohide('info1')">
+        <a href="#">
+          <img class="workgallery" src="images/gallery1.jpg" class="thumbnail img-responsive">
+          <div class="gallery-overlay">
+            <img class="gallerylogo" src="images/gal1logo.svg">
+          </div>
+          <div id="info1" class="gallery-info">
+            <h3 class="galinfo">Revenue increased through luxury hotel & spa's social media</h3>
+            <a href="#" class="case-study">VIEW CASE STUDY</a>
+          </div>
+        </a>
+      </div>
+      <div class="work col-lg-4 col-sm-6 col-xs-12" onmouseenter="infodisplay('info2')" onmouseleave="infohide('info2')">
+        <a href="#">
+          <img class="workgallery" src="images/gallery2.jpg" class="thumbnail img-responsive">
+          <div class="gallery-overlay">
+            <img class="gallerylogo" src="images/gal2logo.svg">
+          </div>  
+          <div id="info2" class="gallery-info">
+            <h3 class="galinfo">Showcasing the beauty of a renowned medieval manor house</h3>
+            <a href="#" class="case-study">VIEW CASE STUDY</a>
+          </div>
+        </a>
+      </div>
+      <div class="work col-lg-4 col-sm-6 col-xs-12" onmouseenter="infodisplay('info3')" onmouseleave="infohide('info3')">
+        <a href="#">
+            <img class="workgallery" src="images/gallery3.jpg" class="thumbnail img-responsive">
+            <div class="gallery-overlay">
+              <img class="gallerylogo" src="images/gal3logo.svg">
+            </div>
+            <div id="info3" class="gallery-info">
+              <h3 class="galinfo">Efficiency & growth for leading walking holiday brand</h3>
+              <a href="#" class="case-study">VIEW CASE STUDY</a>
+            </div>
+        </a>
+      </div>
+      <div class="work col-lg-4 col-sm-6 col-xs-12" onmouseenter="infodisplay('info4')" onmouseleave="infohide('info4')">
+        <a href="#">
+            <img class="workgallery" src="images/gallery4.jpg" class="thumbnail img-responsive">
+            <div class="gallery-overlay">
+              <img class="gallerylogo" src="images/gal4logo.svg">
+            </div>
+            <div id="info4" class="gallery-info">
+              <h3 class="galinfo">Luxury appeal for handmade kitchen brand</h3>
+              <a href="#" class="case-study">VIEW CASE STUDY</a>
+            </div>
+        </a>
+      </div>
+      <div class="work col-lg-4 col-sm-6 col-xs-12" onmouseenter="infodisplay('info5')" onmouseleave="infohide('info5')">
+        <a href="#">
+            <img class="workgallery" src="images/gallery5.jpg" class="thumbnail img-responsive">
+            <div class="gallery-overlay">
+              <img class="gallerylogo" src="images/gal5logo.svg">
+            </div>
+            <div id="info5" class="gallery-info">
+              <h3 class="galinfo">Increased growth and reputation for country hotel & spa</h3>
+              <a href="#" class="case-study">VIEW CASE STUDY</a>
+            </div>
+        </a>
+      </div>
+      <div class="work col-lg-4 col-sm-6 col-xs-12" onmouseenter="infodisplay('info6')" onmouseleave="infohide('info6')">
+        <a href="#">
+            <img class="workgallery" src="images/gallery6.jpg" class="thumbnail img-responsive">
+            <div class="gallery-overlay">
+              <img class="gallerylogo" src="images/gal6logo.svg">
+            </div>
+            <div id="info6" class="gallery-info">
+              <h3 class="galinfo">Showcasing luxurious image of plaster design brand</h3>
+              <a href="#" class="case-study">VIEW CASE STUDY</a>
+            </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12 col-sm-12  definework" style="background-image: url('images/nav-background.jpg');">
+    <div class="definework-overlay">
+      
+      <br clear="all" />
+    </div>
+    <h2 class="col-lg-12 col-sm-12 workhelphead ">How we can help you harness the power of digital marketing</h2>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 workhelp" onmouseenter="helpinfosmall('helpinfo1')" onmouseleave="helpinfobig('helpinfo1')">
+      <a id="helpinfo1" class="helpinfo" href=#>Engage audiences with social media</a>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 workhelp" onmouseenter="helpinfosmall('helpinfo2')" onmouseleave="helpinfobig('helpinfo2')">
+      <a id="helpinfo2" class="helpinfo" href=#>Improve business with a better website</a>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 workhelp" onmouseenter="helpinfosmall('helpinfo3')" onmouseleave="helpinfobig('helpinfo3')">
+      <a id="helpinfo3" class="helpinfo" href=#>Increase customer retention with email</a>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 workhelp" onmouseenter="helpinfosmall('helpinfo4')" onmouseleave="helpinfobig('helpinfo4')">
+      <a id="helpinfo4" class="helpinfo" href=#>Become more visible in search engines</a>
+    </div>
+    <br clear="all" />
+  </div>
+  <div class="blog_container">
+    <div class="latestblog">
+      <div class="blogs_title">
+        <h2 class="latestblog_title">The latest advice from our blog to empower your marketing</h2>
+      </div>
+      <div class="blogs">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog">
+          <div class="blog_content">
+            <h2 class="blog_content_head">2019's Google updates and what they mean for hotel websites</h2>
+            <p class="blog_content_summary">Gaining traffic from Google searches is a key part of many hotels marketing strategies, but at times the results of your SEO efforts can seem a little unpredictable. Keeping an eye on best practices, and key updates to Google’s inner workings can be the key to understanding and bettering the SEO results for hotels. Google’s Search Algorithm Optimising for search engines involves a...</p>
+          </div>
+          <div class="blog_author">
+            <div class="author_img">
+              <img class="authorimg" src="images/ben.jpg"/>
+            </div>
+            <div class="author_info">
+              <p class="author">AUTHOR</p>
+              <p class="author_name">Ben Walker</p>
+              <p class="subject">SUBJECTS</p>
+              <p class="subject_name">Hospitality.SEO</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog">
+          <div class="blog_content">
+            <h2 class="blog_content_head">Why blogging is the best way to showcase your hotel's character</h2>
+            <p class="blog_content_summary">While consumers tend to want a website to provide the information they’re after as quickly and succinctly as possible, long-form blog posts are a little different. The content featured throughout the main pages of your website should clearly display quick answers to consumer questions, so you don’t run the risk of losing their attention, your blog should be the place where you delve...</p>
+          </div>
+          <div class="blog_author">
+            <div class="author_img">
+              <img class="authorimg" src="images/jazz.jpg"/>
+            </div>
+            <div class="author_info">
+              <p class="author">AUTHOR</p>
+              <p class="author_name">Jazz Bovill</p>
+              <p class="subject">SUBJECTS</p>
+              <p class="subject_name">Hospitality</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog">
+          <div class="blog_content">
+            <h2  class="blog_content_head">What is SSL, and why should I be bothered?</h2>
+            <p class="blog_content_summary">So, what is SSL? SSL, or Secure Sockets Layer to give it its full name, is an encryption method used to keep your users’ data safe and secure. To put it simply, this “encrypting” means encoding or jumbling up the data on one end and unjumbling it into its original form, decrypting it, on the other. Practically, this means that when somebody enters information into your website...</p>
+          </div>
+          <div class="blog_author">
+            <div class="author_img">
+              <img class="authorimg" src="images/ben.jpg"/>
+            </div>
+            <div class="author_info">
+              <p class="author">AUTHOR</p>
+              <p class="author_name">Ben Walker</p>
+              <p class="subject">SUBJECTS</p>
+              <p class="subject_name">Web Design</p>
+            </div>
+          </div>
+        </div>
+        <br clear="all" />
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-contact">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-form">
+          <strong class="formhead">MESSAGE US</strong>
+          <input class="textbox1" type="text" placeholder="Your name" name="Name">
+          </br>
+          <input class="textbox1" type="text" placeholder="Your email" name="Email">
+          </br>
+          <textarea class="textbox1 textarea1" placeholder="Your enquiry" name="Enquiry"></textarea> 
+            </br>
+          <button class="form-submit">SEND</button>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-detail">
+          <div class="detail">
+            <strong class="detailhead">CALL US ON</strong>
+            <a href=# class="detailcontent">+44 (0)114 430 0145</a>
+          </div>
+          <div class="detail">
+            <strong class="detailhead">OR EMAIL</strong>
+            <a href=# class="detailcontent">hello@wearearise.com</a>
+          </div>
+          <div class="detail">
+            <strong class="detailhead">SOCIAL US</strong>
+            <div class="detailsocial">
+              <div class="Social" >
+                <a class="sociallink" href="https://twitter.com/weareariseuk">
+                  <img class="sociallogo" id="t" src="images/socialtwhite.png">
+                  <img class="sociallogohover" id="thover" src="images/socialtred.png">
+                </a>
+              </div>
+              <div class="Social" >
+                <a class="sociallink" href="https://facebook.com/weareariseuk">
+                  <img class="sociallogo" id="f" src="images/socialfwhite.png">
+                  <img class="sociallogohover" id="fhover" src="images/socialfred.png">
+                </a>
+              </div>
+              <div class="Social" >
+                <a class="sociallink" href="https://www.linkedin.com/company/arise-we-are-arise-ltd-">
+                  <img class="sociallogo" id="lin" src="images/socialinwhite.png">
+                  <img class="sociallogohover" id="linhover" src="images/socialinred.png">
+                </a>
+              </div>
+              <div class="Social" >
+                <a class="sociallink" href="http://m.me/weareariseuk">
+                  <img class="sociallogo" id="m" src="images/socialmwhite.png">
+                  <img class="sociallogohover" id="mhover" src="images/socialmred.png">
+                </a>
+              </div>
+              <div class="Social" >
+                <a class="sociallink" href="https://www.instagram.com/wearearise/">
+                  <img class="sociallogo" id="insta" src="images/socialinstawhite.png">
+                  <img class="sociallogohover" id="instahover" src="images/socialinstared.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br clear="all" />
+      </div>
+      <br clear="all" />
+      <div class="footer-crediits">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 credits-left">
+          <strong class="creditshead">© 2020 We Are Arise LTD</strong>
+          <span class="creditscontent">Registered company 09209859</span>
+          <span class="creditscontent">VAT #GB 245 7439 84</span>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 credits-right">
+          <strong class="creditshead creditsheadright">Arise, Brincliffe House,<br>59 Wostenholm Rd, Sheffield, S7 1LE, UK</strong>
+          <br/>
+          <a class="creditslink" href="#">Credits</a>
+          <a class="creditslink" href="#">Privacy Policy</a>
+          <a class="creditslink" href="#">Web Design Sheffield</a>
+        </div>
+        <br clear="all" />
+      </div>
+    </div>
+    <br clear="all" />
+  </footer>
+</body>
+</html>
+
+
+    

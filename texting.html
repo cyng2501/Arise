@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Jquary ui -->
+    <script
+    src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"
+    integrity="sha256-PsB+5ZEsBlDx9Fi/GXc1bZmC7wEQzZK4bM/VwNm1L6c="
+    crossorigin="anonymous"></script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .header {
+    width: 100%;
+    height: 100px;
+    padding: 19px 0px;
+    background-color: rgb(42, 54, 59);
+    text-align: center;
+    z-index: 200;
+    position: fixed;
+    top: 0px;
+    margin: 0 auto;
+}
+
+.header_logo {
+    display: inline-block;
+    margin: -10px auto 0;
+    text-align: center;
+    padding:15px 0;
+    vertical-align: top;
+}
+
+.headlogo {
+    height: auto;
+    width: 95px;
+    display: block;
+}
+
+.menu {
+    display: inline-block;
+    padding: 10px 0;
+    margin: 10px 0 0;
+    vertical-align: middle;
+}
+
+.menu_items {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.37em;
+    font-weight:normal;
+    margin-left: 60px;
+    position: relative;
+    text-align: center;
+    color: #d9cbab;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    border-bottom: #d9cbab;
+    display:block;
+    
+    padding-bottom: 5px;
+    float:left;
+}
+a.menu_items:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    opacity: 0.5;
+    left: 0;
+    position: absolute;
+    background: #d9cbab;
+    transition: width 0.3s ease-in-out 0s;
+    width: 0;
+}
+a.menu_items:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+a.menu_items:hover {
+    color: #d9cbab;
+    text-decoration: none;
+}   
+.menu_items:visited{
+    color: #d9cbab;
+    text-decoration: none;
+}
+.hamicon {
+    margin-top: 0;
+}
+.activelink{
+    font-weight:bold;
+}
+@media screen and (max-width: 900px) {
+    .header{
+        
+        text-align: left;
+        padding: 0 40px;
+    }
+    .header_logo{
+        text-align:left;
+        margin-left: 20px;
+        padding-top:19px;
+        margin: 0 10px 0 20px;
+    }
+    .headlogo{
+        max-width: 85px;
+        margin-top: 5px;    
+    }
+    .menu_items{
+        float:none;
+    }
+    .menu {
+        margin-top: 20px;
+        left:0;
+        box-sizing: content-box;
+        width:100%;
+        height:auto;
+        list-style-type: none;
+        display: none;
+        position:fixed;
+        padding-bottom: 30px;
+        background-image: url('../images/nav-background.jpg');
+        background-repeat: no-repeat ; 
+        background-position: center; 
+        background-size: cover;
+        text-align: center;
+    }
+    .menu:before{
+        content:"" ;
+        position: absolute;
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        height: 100%;
+        background-color: #2a363b;
+        box-shadow: 0 0 0 10000px rgba(42, 54, 59, 1);
+        opacity: .9;
+        z-index: 6;
+    }
+    .menu_items {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.7);
+        color: #d9cbab;
+        font-family: "Josefin Sans",sans-serif;
+        font-size: 2.5em;
+        margin: 40px auto 0px;
+        text-align: center;
+        
+        z-index:20;
+    }
+    .menu_items:hover {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .hamicon {
+        display: inline-block;
+        font-size: 22px;
+        margin-right: 20px;
+    }
+
+    .navbar-toggle {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 24px;
+        display: block;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+    .rotateon{
+        margin-top:17px;
+        -webkit-transform: rotate(90deg)!important;
+        -moz-transform: rotate(90deg)!important;
+        -ms-transform: rotate(90deg)!important;
+        transform: rotate(90deg)!important;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+    .navbar-toggle img{
+        width:40px;
+        height:auto;
+    }
+    .activelink {
+        background-color: #ae3c53;
+        display: block;
+        color:#f3efe9;
+    }
+    .activel{
+        margin-top: 100px;
+        box-sizing: border-box;
+        display:inline-block;
+        overflow-y: auto;
+        /* height: 100px; */
+    }
+    a.menu_items:hover:after { 
+        width: 0%; 
+        left: 0; 
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="scroller" class="header">
+        <div class="header_logo">
+            <img id="headerlogo" class="headlogo" src="images/logo4.png">
+        </div>
+        <span class="navbar-toggle" id="js-navbar-toggle" onclick="headerTransform()">
+            <img class="hamicon" src="images/menu1.png">
+        </span>
+        <div class="menu" id="js-menu">
+            <a class="menu_items" href="#">Home</a>
+            <a class="menu_items" href="#">Services</a>
+            <a class="menu_items" href="#">Case Studies</a>
+            <a class="menu_items" href="#">Blog</a>
+            <a class="menu_items" href="#">About</a>
+            <a class="menu_items activelink" href="#">Contact</a>
+            
+        </div>
+    </div>
+    
+    <script>
+        function headerTransform(){
+            var $mainNav = $('#js-menu');
+            var $height = window.innerHeight-80;
+            var $navBarToggle = $('#js-navbar-toggle');
+            $mainNav.toggleClass('active');
+            $mainNav.css({
+                height:$height+'px',
+            })
+            $($navBarToggle).toggleClass('rotateon');
+        }
+        // let mainNav = document.getElementById('js-menu');
+        // let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        // navBarToggle.addEventListener('click', function () {
+        // mainNav.classList.toggle('active');
+        // navBarToggle.classlist.toggle('rotateon');
+        // });
+    </script>        
+</body>
+</html>

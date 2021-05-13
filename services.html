@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Digital Agency UK for Hotels · Arise</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Jquary ui -->
+    <script
+    src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"
+    integrity="sha256-PsB+5ZEsBlDx9Fi/GXc1bZmC7wEQzZK4bM/VwNm1L6c="
+    crossorigin="anonymous"></script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+    
+    <!--Attach style and script-->
+    <link rel="stylesheet" type="text/css" href="css/servicesstyle.css">
+    <script src="javascript/projectscript.js"></script>
+    
+</head>
+<body>
+  <div id="scroller" class="header">
+    <div class="header_logo">
+      <img id="headerlogo" class="headlogo" src="images/logo4.png">
+    </div>
+    <span class="navbar-toggle" id="js-navbar-toggle" onclick="headerTransform()">
+      <img class="hamicon" src="images/menu1.png">
+    </span>
+    <div class="menu" id="js-menu">
+      <a class="menu_items" href="#">Home</a>
+      <a class="menu_items" href="#">Services</a>
+      <a class="menu_items" href="#">Case Studies</a>
+      <a class="menu_items" href="#">Blog</a>
+      <a class="menu_items" href="#">About</a>
+      <a class="menu_items activelink" href="#">Contact</a>
+      
+    </div>
+  </div>
+    <div class="heading">
+        <h1 class="heading_title">How we can help</h1>
+        <span class="heading_content">We work across all your digital channels to produce the best results for your business.</span>
+    </div>
+    <div class="service-squares">
+      <div class="service" >
+        <div class="servicelist col-lg-6 col-sm-6 col-xs-12" onmouseenter="infodisplay('info1')" onmouseleave="infohide('info1')">
+          <a href="#">
+            <img class="servicegallery" src="images/services1.jpg" class="thumbnail img-responsive">
+            <div class="service-overlay">
+              <div class="service-title">
+                Engage your audience through social media
+                <p class="service-subtitle">Social Media Management</p>
+              </div>
+            </div>
+            <div id="info1" class="service-info">
+              <h3 class="servinfo">Engage your audience through social media</h3>
+              <p class="servinfo-content">We manage your social media profiles, creating effective content to build awareness and drive sales.</p>
+              <a href="#" class="findout">Find out more</a>
+            </div>
+          </a>
+        </div>
+        <div class="servicelist col-lg-6 col-sm-6 col-xs-12" onmouseenter="infodisplay('info2')" onmouseleave="infohide('info2')">
+          <a href="#">
+            <img class="servicegallery" src="images/services2.jpg" class="thumbnail img-responsive">
+            <div class="service-overlay">
+              <div class="service-title">
+                Improve business with a better website
+                <p class="service-subtitle">Website Design & Development</p>
+              </div>
+            </div>  
+            <div id="info2" class="service-info">
+              <h3 class="servinfo">Improve business with a better website</h3>
+              <p class="servinfo-content">From beautiful websites to complex booking systems to landing pages, and ongoing support & maintenance.</p>
+              <a href="#" class="findout">Find out more</a>
+            </div>
+          </a>
+        </div>
+        <div class="servicelist col-lg-6 col-sm-6 col-xs-12" onmouseenter="infodisplay('info3')" onmouseleave="infohide('info3')">
+          <a href="#">
+              <img class="servicegallery" src="images/services3.jpg" class="thumbnail img-responsive">
+              <div class="service-overlay">
+                  <div class="service-title">
+                    Increase customer retention with email
+                    <p class="service-subtitle">Email Marketing</p>
+                  </div>
+              </div>
+              <div id="info3" class="service-info">
+                <h3 class="servinfo">Increase customer retention with email</h3>
+                <p class="servinfo-content">Effective email templates that fit your brand, we write and send regular campaigns that increase customer retention.</p>
+                  <a href="#" class="findout">Find out more</a>
+              </div>
+          </a>
+        </div>
+        <div class="servicelist col-lg-6 col-sm-6 col-xs-12" onmouseenter="infodisplay('info4')" onmouseleave="infohide('info4')">
+          <a href="#">
+              <img class="servicegallery" src="images/services4.jpg" class="thumbnail img-responsive">
+              <div class="service-overlay">
+                <div class="service-title">
+                  Become more visible in search engines
+                  <p class="service-subtitle">Search Engine Marketing</p>
+                </div>
+              </div>
+              <div id="info4" class="service-info">
+                <h3 class="servinfo">Become more visible in search engines</h3>
+                <p class="servinfo-content">A great accompaniment to your social media - increase local awareness through organic SEO and paid advertising.</p>
+                  <a href="#" class="findout">Find out more</a>
+              </div>
+          </a>
+        </div>
+        <br clear="all" />
+      </div>
+      <br clear="all" />
+  </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-contact">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-form">
+            <strong class="formhead">MESSAGE US</strong>
+            <input class="textbox1" type="text" placeholder="Your name" name="Name">
+            </br>
+            <input class="textbox1" type="text" placeholder="Your email" name="Email">
+            </br>
+            <textarea class="textbox1 textarea1" placeholder="Your enquiry" name="Enquiry"></textarea> 
+              </br>
+            <button class="form-submit">SEND</button>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-detail">
+            <div class="detail">
+              <strong class="detailhead">CALL US ON</strong>
+              <a href=# class="detailcontent">+44 (0)114 430 0145</a>
+            </div>
+            <div class="detail">
+              <strong class="detailhead">OR EMAIL</strong>
+              <a href=# class="detailcontent">hello@wearearise.com</a>
+            </div>
+            <div class="detail">
+              <strong class="detailhead">SOCIAL US</strong>
+              <div class="detailsocial">
+                <div class="Social" >
+                  <a class="sociallink" href="https://twitter.com/weareariseuk">
+                    <img class="sociallogo" id="t" src="images/socialtwhite.png">
+                    <img class="sociallogohover" id="thover" src="images/socialtred.png">
+                  </a>
+                </div>
+                <div class="Social" >
+                  <a class="sociallink" href="https://facebook.com/weareariseuk">
+                    <img class="sociallogo" id="f" src="images/socialfwhite.png">
+                    <img class="sociallogohover" id="fhover" src="images/socialfred.png">
+                  </a>
+                </div>
+                <div class="Social" >
+                  <a class="sociallink" href="https://www.linkedin.com/company/arise-we-are-arise-ltd-">
+                    <img class="sociallogo" id="lin" src="images/socialinwhite.png">
+                    <img class="sociallogohover" id="linhover" src="images/socialinred.png">
+                  </a>
+                </div>
+                <div class="Social" >
+                  <a class="sociallink" href="http://m.me/weareariseuk">
+                    <img class="sociallogo" id="m" src="images/socialmwhite.png">
+                    <img class="sociallogohover" id="mhover" src="images/socialmred.png">
+                  </a>
+                </div>
+                <div class="Social" >
+                  <a class="sociallink" href="https://www.instagram.com/wearearise/">
+                    <img class="sociallogo" id="insta" src="images/socialinstawhite.png">
+                    <img class="sociallogohover" id="instahover" src="images/socialinstared.png">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br clear="all" />
+        </div>
+        <br clear="all" />
+        <div class="footer-crediits">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 credits-left">
+            <strong class="creditshead">© 2020 We Are Arise LTD</strong>
+            <span class="creditscontent">Registered company 09209859</span>
+            <span class="creditscontent">VAT #GB 245 7439 84</span>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 credits-right">
+            <strong class="creditshead creditsheadright">Arise, Brincliffe House,<br>59 Wostenholm Rd, Sheffield, S7 1LE, UK</strong>
+            <br/>
+            <a class="creditslink" href="#">Credits</a>
+            <a class="creditslink" href="#">Privacy Policy</a>
+            <a class="creditslink" href="#">Web Design Sheffield</a>
+          </div>
+          <br clear="all" />
+        </div>
+      </div>
+      <br clear="all" />
+    </footer>
+    <br clear="all"/>
+  </body>
+</html>
